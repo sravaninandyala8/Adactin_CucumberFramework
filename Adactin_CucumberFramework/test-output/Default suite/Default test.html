@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jan 10 13:14:16 AEDT 2025</td>
+</tr>
+<tr><td>Total time:</td><td>24 seconds (24880 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cucumberOptions.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User sees the fields with pre-filled data", "Book A Hotel Page functionality"</td>
+<td><div><pre>java.lang.AssertionError: expected [null] but found [4]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.BookHotelSteps.the_user_should_see_total_days_in_the_book_hotel_page_is_same_as_the_no_of_days_in_the_select_hotel_page(BookHotelSteps.java:214)
+	at ✽.the user should see total days in the Book hotel page is same as the no of days in the Select Hotel page(file:///C:/Users/srava/Documents/Eclipse%20Projects/Adactin_CucumberFramework/src/test/java/features/BookHotel.feature:53)
+</pre></div><a href='#' onClick='toggleBox("stack-trace378135820", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace378135820'><pre>java.lang.AssertionError: expected [null] but found [4]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.BookHotelSteps.the_user_should_see_total_days_in_the_book_hotel_page_is_same_as_the_no_of_days_in_the_select_hotel_page(BookHotelSteps.java:214)
+	at ✽.the user should see total days in the Book hotel page is same as the no of days in the Select Hotel page(file:///C:/Users/srava/Documents/Eclipse%20Projects/Adactin_CucumberFramework/src/test/java/features/BookHotel.feature:53)
+</pre></div></td>
+<td>12</td>
+<td>cucumberOptions.TestNGTestRunner@43f02ef2</td></tr>
+<tr>
+<td title='cucumberOptions.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User sees the fields with pre-filled data", "Book Confirmation Page functionality"</td>
+<td><div><pre>java.lang.AssertionError: expected [null] but found [AUD $ 125]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.BookingConfirmationSteps.the_user_should_see_price_per_night_in_the_booking_confirmation_page_is_same_as_the_price_per_night_in_the_book_hotel_page(BookingConfirmationSteps.java:94)
+	at ✽.the user should see price per night in the Booking Confirmation page is same as the price per night in the Book Hotel page(file:///C:/Users/srava/Documents/Eclipse%20Projects/Adactin_CucumberFramework/src/test/java/features/BookingConfirmation.feature:76)
+</pre></div><a href='#' onClick='toggleBox("stack-trace734323788", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace734323788'><pre>java.lang.AssertionError: expected [null] but found [AUD $ 125]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.BookingConfirmationSteps.the_user_should_see_price_per_night_in_the_booking_confirmation_page_is_same_as_the_price_per_night_in_the_book_hotel_page(BookingConfirmationSteps.java:94)
+	at ✽.the user should see price per night in the Booking Confirmation page is same as the price per night in the Book Hotel page(file:///C:/Users/srava/Documents/Eclipse%20Projects/Adactin_CucumberFramework/src/test/java/features/BookingConfirmation.feature:76)
+</pre></div></td>
+<td>19</td>
+<td>cucumberOptions.TestNGTestRunner@43f02ef2</td></tr>
+</table><p>
+</body>
+</html>
