@@ -9,21 +9,29 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">24,880</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">26,678</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">cucumberOptions.TestNGTestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="2">1736475256974</td><td rowspan="2">12127</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">cucumberOptions.FailedTestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="3">1736484209744</td><td rowspan="3">14649</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m2">runScenario</a></td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">cucumberOptions.FailedTestRunner</td><td><a href="#m3">runScenario</a></td><td rowspan="1">1736484209744</td><td rowspan="1">19861</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">cucumberOptions.TestNGTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User sees the fields with pre-filled data&quot;</td><td>&quot;Book A Hotel Page functionality&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [null] but found [4]
+<h2>Default test</h2><h3 id="m0">cucumberOptions.FailedTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User sees the fields with pre-filled data&quot;</td><td>&quot;Book A Hotel Page functionality&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [null] but found [4 Day(s)]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 	at org.testng.Assert.assertEquals(Assert.java:132)
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
-	at stepDefinitions.BookHotelSteps.the_user_should_see_total_days_in_the_book_hotel_page_is_same_as_the_no_of_days_in_the_select_hotel_page(BookHotelSteps.java:214)
-	at ✽.the user should see total days in the Book hotel page is same as the no of days in the Select Hotel page(file:///C:/Users/srava/Documents/Eclipse%20Projects/Adactin_CucumberFramework/src/test/java/features/BookHotel.feature:53)
+	at stepDefinitions.BookHotelSteps.the_user_should_see_total_days_in_the_book_hotel_page_is_same_as_the_no_of_days_in_the_select_hotel_page(BookHotelSteps.java:219)
+	at ✽.the user should see total days in the Book hotel page is same as the no of days in the Select Hotel page(file:///C:/Users/srava/git/repository2/Adactin_CucumberFramework/src/test/java/features/BookHotel.feature:53)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">cucumberOptions.TestNGTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User sees the fields with pre-filled data&quot;</td><td>&quot;Book Confirmation Page functionality&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [null] but found [AUD $ 125]
+<h3 id="m1">cucumberOptions.FailedTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User clicks on &quot;Checkbox&quot; column&quot;</td><td>&quot;Booked Itinerary Page functionality&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at stepDefinitions.BookedItinerarySteps.all_checkboxes_should_be_selected(BookedItinerarySteps.java:197)
+	at ✽.all checkboxes should be selected(file:///C:/Users/srava/git/repository2/Adactin_CucumberFramework/src/test/java/features/BookedItinerary.feature:58)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">cucumberOptions.FailedTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User sees the fields with pre-filled data&quot;</td><td>&quot;Book Confirmation Page functionality&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [null] but found [AUD $ 125]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -31,7 +39,8 @@
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
 	at stepDefinitions.BookingConfirmationSteps.the_user_should_see_price_per_night_in_the_booking_confirmation_page_is_same_as_the_price_per_night_in_the_book_hotel_page(BookingConfirmationSteps.java:94)
-	at ✽.the user should see price per night in the Booking Confirmation page is same as the price per night in the Book Hotel page(file:///C:/Users/srava/Documents/Eclipse%20Projects/Adactin_CucumberFramework/src/test/java/features/BookingConfirmation.feature:76)
+	at ✽.the user should see price per night in the Booking Confirmation page is same as the price per night in the Book Hotel page(file:///C:/Users/srava/git/repository2/Adactin_CucumberFramework/src/test/java/features/BookingConfirmation.feature:57)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">cucumberOptions.FailedTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User sees all the fields&quot;</td><td>&quot;Book Confirmation Page functionality&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

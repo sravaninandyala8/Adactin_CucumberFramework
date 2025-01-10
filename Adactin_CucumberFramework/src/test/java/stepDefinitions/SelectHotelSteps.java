@@ -170,7 +170,8 @@ public class SelectHotelSteps {
 		String actualNoOfDays = selectHotel.getNoOfDaysDisplayed(); 
 	    Thread.sleep(2000);	   
 	    testContextSetup.NoOfDaysSelectPage  = actualNoOfDays;
-	    System.out.println(testContextSetup.NoOfDaysSelectPage+ "test");
+	    System.out.println(testContextSetup.NoOfDaysSelectPage+ " No of Days in select page");
+	    System.out.println(actualNoOfDays + " actual");
 	    String enteredCheckInDateStr = testContextSetup.enteredCheckInDate;  // Example check-in date
         String enteredCheckOutDateStr = testContextSetup.enteredCheckOutDate; // Example check-out date
 

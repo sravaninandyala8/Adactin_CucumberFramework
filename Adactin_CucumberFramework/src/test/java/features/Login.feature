@@ -1,7 +1,9 @@
 Feature: Login Page Functionality
 
-  Scenario: User Login with valid credentials
+  Background: 
     Given the user is on the login page
+
+  Scenario: User Login with valid credentials
     When the user enters username "AdactinUser234" and password "RA5974"
     And the user clicks on login button
     Then the user should navigate to the Search Hotel page
@@ -31,4 +33,4 @@ Feature: Login Page Functionality
     And the user should see the Password text
     And the user should see the Important Note text
     And the user should see the footer message
-    
+
