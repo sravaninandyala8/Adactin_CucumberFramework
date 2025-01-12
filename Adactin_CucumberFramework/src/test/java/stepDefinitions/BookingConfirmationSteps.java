@@ -91,6 +91,7 @@ public class BookingConfirmationSteps {
 	public void the_user_should_see_price_per_night_in_the_booking_confirmation_page_is_same_as_the_price_per_night_in_the_book_hotel_page() {
 	    
 		String actualPricePerNight = bookingConfirmation.getPricePerNightInputText();
+		
 		Assert.assertEquals(actualPricePerNight, testContextSetup.pricePerNightBookHotelPage);
 	}
 	@Then("the user should see total price in the Booking Confirmation page is same as the total price in the Book Hotel page")

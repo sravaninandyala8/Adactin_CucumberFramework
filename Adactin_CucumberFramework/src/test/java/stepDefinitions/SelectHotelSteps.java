@@ -19,6 +19,8 @@ public class SelectHotelSteps {
 	public String pricePerNightSelectPage;
 	public String NoOfDaysSelectPage;
 	public String totalPriceSelectPage;
+	
+	
 		
 
 		public SelectHotelSteps(TestContextSetup testContextSetup)
@@ -189,6 +191,8 @@ public class SelectHotelSteps {
       
        
 	}
+	
+
 	
 	@Then("the user should see the select column name")
 	public void the_user_should_see_the_select_column_name() {

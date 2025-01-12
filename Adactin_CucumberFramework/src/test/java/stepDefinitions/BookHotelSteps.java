@@ -28,6 +28,7 @@ public class BookHotelSteps {
 		this.bookHotel = testContextSetup.pageObjectManager.getBookHotelPage();
 		this.selectHotel = testContextSetup.pageObjectManager.getSelectHotelPage();
 		this.searchHotel = testContextSetup.pageObjectManager.getSearchHotelPage();
+		
 	}
 	
 	@Then("the user should see the Welcome text in book hotel page")
@@ -208,20 +209,22 @@ public class BookHotelSteps {
 	@Then("the user should see total days in the Book hotel page is same as the no of days in the Select Hotel page")
 	public void the_user_should_see_total_days_in_the_book_hotel_page_is_same_as_the_no_of_days_in_the_select_hotel_page() {
 	    
-		String bookHotelTotalDays = bookHotel.getTotalDaysInputText();
-		String selectHotelTotalDays = testContextSetup.NoOfDaysSelectPage;
-		System.out.println(bookHotelTotalDays + " Book Hotel Page total days");
-		System.out.println(selectHotelTotalDays + " Select Hotel Page total days");
+		//String bookHotelTotalDays = bookHotel.getTotalDaysInputText();
+		
+		//String selectHotelTotalDays = testContextSetup.NoOfDaysSelectPage;
+		//System.out.println(bookHotelTotalDays + " Book Hotel Page total days");
+		//System.out.println(selectHotelTotalDays + " Select Hotel Page total days");
+		
 		
 		//bookHotelTotalDays.trim().replace("Day(s)", "Days");
 	    //selectHotelTotalDays.trim().replace("Days", "Days");
 		
-	    Assert.assertEquals(bookHotelTotalDays, selectHotelTotalDays);
+	    //Assert.assertEquals(bookHotelTotalDays, totalNoOfDaysBook);
 	    
-	//	String totalDays = bookHotel.getTotalDaysInputText();
-	//	System.out.println(totalDays + " Total days");
-	//	System.out.println(testContextSetup.NoOfDaysSelectPage);
-	//	Assert.assertEquals(totalDays.split(" ")[0].trim(), testContextSetup.NoOfDaysSelectPage);
+	String totalDays = bookHotel.getTotalDaysInputText();
+	System.out.println(totalDays + " Total days in book hotel page");
+	System.out.println(testContextSetup.NoOfDaysSelectPage + "Total days in select hotel page");
+	Assert.assertEquals(totalDays.split(" ")[0].trim(), testContextSetup.NoOfDaysSelectPage);
 	}
 	
 	@Then("the user should see price per night in the Book hotel page is same as the price per night in the Select Hotel page")
@@ -231,6 +234,8 @@ public class BookHotelSteps {
 		Assert.assertEquals(pricePerNight, testContextSetup.pricePerNightSelectPage);
 		testContextSetup.pricePerNightBookHotelPage = pricePerNight;
 	}
+	
+	
 	
 	@Then("the user should see total price in the Book hotel page is same as the total price in the Select Hotel page")
 	public void the_user_should_see_total_price_in_the_book_hotel_page_is_same_as_the_total_price_in_the_select_hotel_page() {

@@ -47,7 +47,7 @@ WebDriver driver;
 	@FindBy(xpath="//*[@id='hotel_name_0']") WebElement col_hotelName;
 	@FindBy(xpath="//*[@id='arr_date_0']") WebElement col_arrivalDate;
 	@FindBy(xpath="//*[@id='dep_date_0']") WebElement col_departureDate;
-	@FindBy(xpath="//*[@id='no_days_0']") WebElement col_noOfDays;
+	@FindBy(xpath="//input[@id='no_days_0']") WebElement col_noOfDays;
 	@FindBy(xpath="//*[@id='room_type_0']") WebElement col_roomType;
 	@FindBy(xpath="//*[@id='price_night_0']") WebElement col_pricePerNight;
 	@FindBy(xpath="//*[@id='total_price_0']") WebElement col_totalPrice;

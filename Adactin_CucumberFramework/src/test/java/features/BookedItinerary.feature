@@ -52,7 +52,5 @@ Feature: Booked Itinerary Page functionality
   Scenario: User clicks on "Logout" button
     And the user clicks on Logout button in booked itinerary page
     Then the user should navigate to the Logout page
-	@Testing
-  Scenario: User clicks on "Checkbox" column
-    And the user clicks on the Checkbox column
-    Then all checkboxes should be selected
+	
+

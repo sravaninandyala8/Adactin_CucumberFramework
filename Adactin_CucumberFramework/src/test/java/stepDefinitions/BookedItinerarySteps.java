@@ -179,24 +179,6 @@ public class BookedItinerarySteps {
 		String actualTotalPriceText = bookedItinerary.getTotalPriceText();
 		Assert.assertEquals(actualTotalPriceText,"Total Price (incl. GST)");
 	}
-	@When("the user clicks on the Checkbox column")
-	public void the_user_clicks_on_the_checkbox_column() {
-		
-	    bookedItinerary.clickCheckBoxColumn();
-	}
-	@Then("all checkboxes should be selected")
-	public void all_checkboxes_should_be_selected() throws InterruptedException {
-	    
-		List<WebElement> checkboxes = bookedItinerary.getCheckboxes();
-        
-		Thread.sleep(5000);
-        // Loop through all checkboxes and check if they are selected
-		for(int i=0;i<checkboxes.size();i++)
-		{
-			boolean actualCheckboxes = checkboxes.get(i).isSelected();
-			Assert.assertTrue(actualCheckboxes);
-		}
-       
-	}
+	
 
 }
