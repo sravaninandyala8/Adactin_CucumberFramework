@@ -16,12 +16,7 @@ public class SelectHotelSteps {
 	TestContextSetup testContextSetup;
 	SelectHotelPage selectHotel;
 	SearchHotelPage searchHotel;
-	public String pricePerNightSelectPage;
-	public String NoOfDaysSelectPage;
-	public String totalPriceSelectPage;
 	
-	
-		
 
 		public SelectHotelSteps(TestContextSetup testContextSetup)
 		{
@@ -80,14 +75,12 @@ public class SelectHotelSteps {
 		String actualTotalPrice = selectHotel.getTotalPriceDisplayed();
 		System.out.println(actualTotalPrice);
 		Assert.assertEquals(actualTotalPrice.split(" ")[0].trim(), "AUD");
-		testContextSetup.totalPriceSelectPage = actualTotalPrice;
 		
 	}
 
 	@Then("the user should see Arrival date displayed in the Select Hotel page is same as the Check In Date entered in the Search Hotel page")
 	public void the_user_should_see_arrival_date_displayed_in_the_select_hotel_page_is_same_as_the_check_in_date_entered_in_the_search_hotel_page() {
 	    
-
 		String actualArrivalDate = selectHotel.getArrivalDateDisplayed();
 		Assert.assertEquals(actualArrivalDate, testContextSetup.enteredCheckInDate);
 		
@@ -125,7 +118,7 @@ public class SelectHotelSteps {
 	    
 		String actualPricePerNight = selectHotel.getPricePerNightDisplayed();
 		Assert.assertEquals(actualPricePerNight.split(" ")[0].trim(), "AUD");
-		testContextSetup.pricePerNightSelectPage = actualPricePerNight;
+		
 	}
 	
 	@Then("the user should see the Welcome text in select hotel page")
@@ -135,6 +128,7 @@ public class SelectHotelSteps {
 		Assert.assertEquals(actualWelcomeText, "Welcome to Adactin Group of Hotels");
 	   
 	}
+	
 	@Then("the user should see the Adactin Logo in select hotel page")
 	public void the_user_should_see_the_adactin_logo_in_select_hotel_page() {
 	    
@@ -171,9 +165,7 @@ public class SelectHotelSteps {
 	public void the_user_should_see_no_of_days_correctly_calculates_the_number_of_nights_between_the_arrival_date_and_departure_date() throws InterruptedException {
 		String actualNoOfDays = selectHotel.getNoOfDaysDisplayed(); 
 	    Thread.sleep(2000);	   
-	    testContextSetup.NoOfDaysSelectPage  = actualNoOfDays;
-	    System.out.println(testContextSetup.NoOfDaysSelectPage+ " No of Days in select page");
-	    System.out.println(actualNoOfDays + " actual");
+	    
 	    String enteredCheckInDateStr = testContextSetup.enteredCheckInDate;  // Example check-in date
         String enteredCheckOutDateStr = testContextSetup.enteredCheckOutDate; // Example check-out date
 
@@ -189,10 +181,7 @@ public class SelectHotelSteps {
 
         Assert.assertEquals(actualNoOfDays, numberOfDays+" Days");
       
-       
 	}
-	
-
 	
 	@Then("the user should see the select column name")
 	public void the_user_should_see_the_select_column_name() {

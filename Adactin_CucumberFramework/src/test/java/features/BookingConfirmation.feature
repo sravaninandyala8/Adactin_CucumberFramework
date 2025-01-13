@@ -19,9 +19,9 @@ Feature: Book Confirmation Page functionality
     And the user selects the values for the dropdowns in book hotel page:
       | Credit Card Type | Select Month | Select Year |
       | American Express | October      |        2029 |
-    And the user clicks on the Book Now button in book hotel page
 
   Scenario: User sees all the fields
+    And the user clicks on the Book Now button in book hotel page
     Then the user should see the Welcome text in booking confirmation page
     And the user should see the Adactin Logo in booking confirmation page
     And the user should see the Booking Confirmation text in booking confirmation page
@@ -44,48 +44,62 @@ Feature: Book Confirmation Page functionality
     And the user should see the Billing Address text in booking confirmation page
     And the user should see the Order No text in booking confirmation page
 
-  @Testing
+
   Scenario: User sees the fields with pre-filled data
-    Then the user should see hotel name in the Booking Confirmation page is same as the hotel selected in the Search Hotel page
-    And the user should see location in the Booking Confirmation page is same as the location selected in the Search Hotel page
-    And the user should see room type in the Booking Confirmation page is same as the rome type selected in the Search Hotel page
-    And the user should see arrival date in the Booking Confirmation page is same as the check In date entered in the Search Hotel page
-    And the user should see departure date in the Booking Confirmation page is same as the check out date entered in the Search Hotel page
-    And the user should see total rooms in the Booking Confirmation page is same as the number of rooms selected in the Search Hotel page
-    And the user should see adults per room in the Booking Confirmation page is same as the adults per room selected in the Select Hotel page
-    And the user should see children per room in the Booking Confirmation page is same as the children per room selected in the Select Hotel page
+    And the user sees the hotel name in the book hotel page
+    And the user sees the location in the book hotel page
+    And the user sees the room type in the book hotel page
+    And the user sees the total rooms in the book hotel page
+    And the user sees the price per night in the book hotel page
+    And the user sees the total price in the book hotel page
+    And the user sees the price per night in the book hotel page
+    And the user sees the gst in the book hotel page
+    And the user sees the final filled price in the book hotel page
+    And the user clicks on the Book Now button in book hotel page
+    Then the user should see hotel name in the Booking Confirmation page is same as the hotel selected in the Book Hotel page
+    And the user should see location in the Booking Confirmation page is same as the location selected in the Book Hotel page
+    And the user should see room type in the Booking Confirmation page is same as the rome type selected in the Book Hotel page
+    And the user should see total rooms in the Booking Confirmation page is same as the number of rooms selected in the Book Hotel page
     And the user should see price per night in the Booking Confirmation page is same as the price per night in the Book Hotel page
     And the user should see total price in the Booking Confirmation page is same as the total price in the Book Hotel page
     And the user should see the gst in the Booking Confirmation page is same as the gst in the Book Hotel page
     And the user should see the final billed price in the Booking Confirmation page is same as the final billed price in the Book Hotel page
 
   Scenario: User sees the Order No
+    And the user clicks on the Book Now button in book hotel page
     Then the user should see the Order No in the booking confirmation page
 
   Scenario: User clicks on "Search Hotel" button
+    And the user clicks on the Book Now button in book hotel page
     And the user clicks on the Search Hotel button in booking confirmation page
     Then the user should navigate to the Search Hotel page
 
   Scenario: User clicks on "Search Hotel" link
+    And the user clicks on the Book Now button in book hotel page
     And the user clicks on the Search Hotel link in booking confirmation page
     Then the user should navigate to the Search Hotel page
 
   Scenario: User clicks on "My Itinerary" button
+    And the user clicks on the Book Now button in book hotel page
     And the user clicks on the My Itinerary button in booking confirmation page
     Then the user should navigate to the Booked Itinerary page
 
   Scenario: User clicks on "Booked Itinerary" link
+    And the user clicks on the Book Now button in book hotel page
     And the user clicks on the Booked Itinerary link in booking confirmation page
     Then the user should navigate to the Booked Itinerary page
 
   Scenario: User clicks on "Logout" button
+    And the user clicks on the Book Now button in book hotel page
     And the user clicks on the Logout button in booking confirmation page
     Then the user should navigate to the Logout page
 
   Scenario: User clicks on "Logout" link
+    And the user clicks on the Book Now button in book hotel page
     And the user clicks on the Logout link in booking confirmation page
     Then the user should navigate to the Logout page
 
   Scenario: User clicks on "Change Password" link
+    And the user clicks on the Book Now button in book hotel page
     And the user clicks on the Change Password link in booking confirmation page
     Then the user should navigate to the Change Password page

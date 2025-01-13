@@ -15,12 +15,15 @@ public class BookHotelSteps {
 	BookHotelPage bookHotel;
 	SelectHotelPage selectHotel;
 	SearchHotelPage searchHotel;
-	public String totalPriceBookHotelPage;
-	public String gstBookHotelPage;
-	public String finalBilledPriceBookHotelPage;
-	public String pricePerNightBookHotelPage;
 	
-
+	public String hotelNameSelectPage;
+	public String locationSelectPage;
+	public String roomTypeSelectPage;
+	public String numberOfRoomsSelectPage;
+	public String totalDaysSelectPage;
+	public String priceperNightSelectPage;
+	public String totalPriceSelectPage;
+	
 	
 	public BookHotelSteps(TestContextSetup testContextSetup)
 	{
@@ -178,104 +181,120 @@ public class BookHotelSteps {
 		Assert.assertEquals(cvvNumberText,"CVV Number*");
 	}
 	
-	@Then("the user should see hotel name in the Book hotel page is same as the hotel selected in the Search Hotel page")
-	public void the_user_should_see_hotel_name_in_the_book_hotel_page_is_same_as_the_hotel_selected_in_the_search_hotel_page() {
-	    
-		String hotelName = bookHotel.getHotelNameInputText();
-		Assert.assertEquals(hotelName, testContextSetup.selectedHotel);
+	@When("the user sees the select hotel name in the select hotel page")
+	public void the_user_sees_the_select_hotel_name_in_the_select_hotel_page() {
+		String expectedHotelNameSelect = selectHotel.getHotelNameDisplayed();
+		testContextSetup.hotelNameSelectPage = expectedHotelNameSelect;
 	}
 	
-	@Then("the user should see location in the Book hotel page is same as the location selected in the Search Hotel page")
-	public void the_user_should_see_location_in_the_book_hotel_page_is_same_as_the_location_selected_in_the_search_hotel_page() {
-	    
-		String location = bookHotel.getLocationInputText();
-		Assert.assertEquals(location, testContextSetup.selectedLocation);
+	@When("the user sees the select location in the select hotel page")
+	public void the_user_sees_the_select_location_in_the_select_hotel_page() {
+		String expectedlocationSelect = selectHotel.getLocationDisplayed();
+		testContextSetup.locationSelectPage = expectedlocationSelect;
+	}
+	@When("the user sees the select room type in the select hotel page")
+	public void the_user_sees_the_select_room_type_in_the_select_hotel_page() {
+		String expectedRoomTypeSelect = selectHotel.getRoomTypeDisplayed();
+		testContextSetup.roomTypeSelectPage = expectedRoomTypeSelect;
+	}
+	@When("the user sees the number of rooms in the select hotel page")
+	public void the_user_sees_the_number_of_rooms_in_the_select_hotel_page() {
+		String expectedNumberOfRoomsSelect = selectHotel.getRoomsDisplayed();
+		testContextSetup.numberOfRoomsSelectPage = expectedNumberOfRoomsSelect;
+	}
+	@When("the user sees the total days in the select hotel page")
+	public void the_user_sees_the_total_days_in_the_select_hotel_page() {
+		String expectedTotalDaysSelect = selectHotel.getNoOfDaysDisplayed();
+		testContextSetup.totalDaysSelectPage = expectedTotalDaysSelect;
 	}
 	
-	@Then("the user should see room type in the Book hotel page is same as the rome type selected in the Search Hotel page")
-	public void the_user_should_see_room_type_in_the_book_hotel_page_is_same_as_the_rome_type_selected_in_the_search_hotel_page() {
+	@When("the user sees the price per night in the select hotel page")
+	public void the_user_sees_the_price_per_night_in_the_select_hotel_page() {
+	    String expectedPriceperNightSelect = selectHotel.getPricePerNightDisplayed();
+	    testContextSetup.priceperNightSelectPage = expectedPriceperNightSelect;
+	}
+	@When("the user sees the total price in the select hotel page")
+	public void the_user_sees_the_total_price_in_the_select_hotel_page() {
+		String expectedTotalPriceSelect = selectHotel.getTotalPriceDisplayed();
+	    testContextSetup.totalPriceSelectPage = expectedTotalPriceSelect;
+		
+	}
+
+	
+	@Then("the user should see hotel name in the Book hotel page is same as the hotel selected in the select Hotel page")
+	public void the_user_should_see_hotel_name_in_the_book_hotel_page_is_same_as_the_hotel_selected_in_the_select_hotel_page() {
+	    String actualHotelNameBook = bookHotel.getHotelNameInputText();
+	    Assert.assertEquals(actualHotelNameBook, testContextSetup.hotelNameSelectPage);
+	}
+	@Then("the user should see location in the Book hotel page is same as the location selected in the select Hotel page")
+	public void the_user_should_see_location_in_the_book_hotel_page_is_same_as_the_location_selected_in_the_select_hotel_page() {
+		 String actualLocationBook = bookHotel.getLocationInputText();
+		    Assert.assertEquals(actualLocationBook, testContextSetup.locationSelectPage);
+	}
+	@Then("the user should see room type in the Book hotel page is same as the rome type selected in the select Hotel page")
+	public void the_user_should_see_room_type_in_the_book_hotel_page_is_same_as_the_rome_type_selected_in_the_select_hotel_page() {
+		 String actualRoomTypeBook = bookHotel.getRoomTypeInputText();
+		    Assert.assertEquals(actualRoomTypeBook, testContextSetup.roomTypeSelectPage);
+	}
+	@Then("the user should see number of rooms in the Book hotel page is same as the number of rooms selected in the select Hotel page")
+	public void the_user_should_see_number_of_rooms_in_the_book_hotel_page_is_same_as_the_number_of_rooms_selected_in_the_select_hotel_page() {
+		String actualNumberOfRoomsBook = bookHotel.getNumberOfRoomsInputText();
+		
+	    Assert.assertEquals(actualNumberOfRoomsBook.split(" ")[0].trim(), testContextSetup.numberOfRoomsSelectPage.split(" ")[0].trim());
+	}
+	
+	@Then("the user should see total price in the Book hotel page is same as the total price in the Select Hotel page")
+	public void the_user_should_see_total_price_in_the_book_hotel_page_is_same_as_the_total_price_in_the_select_hotel_page() {
 	   
-		String roomType = bookHotel.getRoomTypeInputText();
-		Assert.assertEquals(roomType, testContextSetup.selectedRoomType);
-	}
-	
-	@Then("the user should see number of rooms in the Book hotel page is same as the number of rooms selected in the Search Hotel page")
-	public void the_user_should_see_number_of_rooms_in_the_book_hotel_page_is_same_as_the_number_of_rooms_selected_in_the_search_hotel_page() {
-	    
-		String numberOfRooms = bookHotel.getNumberOfRoomsInputText();
-		Assert.assertEquals(numberOfRooms.split(" ")[0].trim(), testContextSetup.selectedNumberOfRooms.split(" ")[0].trim());
+		String actualTotalPriceBook = bookHotel.getTotalPriceInputText();
+		
+	    Assert.assertEquals(actualTotalPriceBook, testContextSetup.totalPriceSelectPage);
 	}
 	
 	@Then("the user should see total days in the Book hotel page is same as the no of days in the Select Hotel page")
 	public void the_user_should_see_total_days_in_the_book_hotel_page_is_same_as_the_no_of_days_in_the_select_hotel_page() {
 	    
-		//String bookHotelTotalDays = bookHotel.getTotalDaysInputText();
+		String actualTotalDaysBook = bookHotel.getTotalDaysInputText();
 		
-		//String selectHotelTotalDays = testContextSetup.NoOfDaysSelectPage;
-		//System.out.println(bookHotelTotalDays + " Book Hotel Page total days");
-		//System.out.println(selectHotelTotalDays + " Select Hotel Page total days");
-		
-		
-		//bookHotelTotalDays.trim().replace("Day(s)", "Days");
-	    //selectHotelTotalDays.trim().replace("Days", "Days");
-		
-	    //Assert.assertEquals(bookHotelTotalDays, totalNoOfDaysBook);
-	    
-	String totalDays = bookHotel.getTotalDaysInputText();
-	System.out.println(totalDays + " Total days in book hotel page");
-	System.out.println(testContextSetup.NoOfDaysSelectPage + "Total days in select hotel page");
-	Assert.assertEquals(totalDays.split(" ")[0].trim(), testContextSetup.NoOfDaysSelectPage);
+	    Assert.assertEquals(actualTotalDaysBook.split(" ")[0].trim(), testContextSetup.totalDaysSelectPage.split(" ")[0].trim());
 	}
 	
+	
+
 	@Then("the user should see price per night in the Book hotel page is same as the price per night in the Select Hotel page")
 	public void the_user_should_see_price_per_night_in_the_book_hotel_page_is_same_as_the_price_per_night_in_the_select_hotel_page() {
-		
-		String pricePerNight = bookHotel.getPricePerNightInputText();
-		Assert.assertEquals(pricePerNight, testContextSetup.pricePerNightSelectPage);
-		testContextSetup.pricePerNightBookHotelPage = pricePerNight;
-	}
-	
-	
-	
-	@Then("the user should see total price in the Book hotel page is same as the total price in the Select Hotel page")
-	public void the_user_should_see_total_price_in_the_book_hotel_page_is_same_as_the_total_price_in_the_select_hotel_page() {
 	    
-		String totalPrice = bookHotel.getTotalPriceInputText();
-		Assert.assertEquals(totalPrice, testContextSetup.totalPriceSelectPage);
-		testContextSetup.totalPriceBookHotelPage = totalPrice;
+		String actualPricePerNightBook = bookHotel.getPricePerNightInputText();
+		
+	    Assert.assertEquals(actualPricePerNightBook, testContextSetup.priceperNightSelectPage);
 	}
 	
 	@Then("the user should see the GST is calculated correctly in Book Hotel page")
 	public void the_user_should_see_the_gst_is_calculated_correctly_in_book_hotel_page() {
-	    
 		String actualGst = bookHotel.getGstInputText();
-		testContextSetup.gstBookHotelPage = actualGst;
 		
 		String actualGstNumeric = actualGst.replaceAll("[^0-9.]", "");  // Remove non-numeric characters
 	    double actualGstValue = Double.parseDouble(actualGstNumeric);  // Now parse the numeric value 
-	    
-		double totalPrice = bookHotel.extractPrice(testContextSetup.totalPriceBookHotelPage); 
+	    String actualtotalPrice = bookHotel.getTotalPriceInputText();
+		double totalPrice = bookHotel.extractPrice(actualtotalPrice); 
 		double expectedGST = (totalPrice * 10) / 100;
 		
 		Assert.assertEquals("AUD $ " +actualGstValue, "AUD $ " +expectedGST);
-		
 	}
-	
 	@Then("the user should see the Final Billed Price is calculated correctly in Book Hotel page")
 	public void the_user_should_see_the_final_billed_price_is_calculated_correctly_in_book_hotel_page() {
-	  
+	    
 		String actualFinalBilledPrice = bookHotel.getFinalBilledInputText();
-		testContextSetup.finalBilledPriceBookHotelPage = actualFinalBilledPrice;
-		
+	
 		String actualFinalBilledPriceNumeric = actualFinalBilledPrice.replaceAll("[^0-9.]", "");  // Remove non-numeric characters
 	    double actualFinalBilledPriceValue = Double.parseDouble(actualFinalBilledPriceNumeric);  // Now parse the numeric value
-	    
-		double totalPrice = bookHotel.extractPrice(testContextSetup.totalPriceBookHotelPage); 
-		double gst = bookHotel.extractPrice(testContextSetup.gstBookHotelPage); 
+	    String actualTotalPrice = bookHotel.getTotalPriceInputText();
+	    String actualGst = bookHotel.getGstInputText();
+		double totalPrice = bookHotel.extractPrice(actualTotalPrice); 
+		double gst = bookHotel.extractPrice(actualGst); 
 		double expectedFinalBilledPrice = (totalPrice+gst);
 		
 		Assert.assertEquals("AUD $ " +actualFinalBilledPriceValue, "AUD $ " +expectedFinalBilledPrice);	
-		
 	}
 	
 	@When("the user clicks on the Book Now button in book hotel page")
@@ -357,6 +376,7 @@ public class BookHotelSteps {
 	    
 		bookHotel.setCvvNumber(cvvNumber);
 	}
+	
 	@When("the user selects the values for the dropdowns in book hotel page:")
 	public void the_user_selects_the_values_for_the_dropdowns_in_book_hotel_page(io.cucumber.datatable.DataTable dataTable) {
 	     // Get the data from the table
@@ -369,6 +389,7 @@ public class BookHotelSteps {
         bookHotel.selectExpiryMonth(expiryMonth);
         bookHotel.selectExpiryYear(expiryYear);
 	}
+	
 	@Then("the user should navigate to the Booking Confirm page")
 	public void the_user_should_navigate_to_the_booking_confirm_page() throws InterruptedException {
 	    

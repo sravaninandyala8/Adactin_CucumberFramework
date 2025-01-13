@@ -1,0 +1,845 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jan 13, 2025 04:59:00 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@Testing</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Book Confirmation Page functionality</p>
+            <p class="text-sm">
+              <span>4:59:01 pm</span> / <span>00:00:18:555</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Book Confirmation Page functionality</h5>
+<span class='badge badge-success'>01.13.2025 4:59:01 pm</span>
+<span class='badge badge-danger'>01.13.2025 4:59:20 pm</span>
+<span class='badge badge-default'>00:00:18:555</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User clicks on "Search Hotel" button</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginSteps.the_user_is_on_the_login_page()">
+                <span>Given the user is on the login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginSteps.the_user_enters_username_and_password(java.lang.String,java.lang.String)">
+                <span>When the user enters username "AdactinUser234" and password "RA5974"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginSteps.the_user_clicks_on_login_button()">
+                <span>And the user clicks on login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchHotelSteps.the_user_selects_the_values_for_the_dropdowns_in_search_hotel_page(io.cucumber.datatable.DataTable)">
+                <span>And the user selects the values for the dropdowns in search hotel page:</span>
+      <div><table class='markup-table table '><tr><td>Location</td><td>Hotels</td><td>Room Type</td><td>Number of Rooms</td><td>Adults Per Room</td><td>Children Per Room</td></tr><tr><td>Sydney</td><td>Hotel Creek</td><td>Standard</td><td>3 - Three</td><td>2 - Two</td><td>2 - Two</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchHotelSteps.the_user_enters_a_valid_check_in_date_as_in_search_hotel_page(java.lang.String)">
+                <span>And the user enters a valid Check In Date as "23/07/2025" in search hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchHotelSteps.the_user_enters_a_valid_check_out_date_as_in_search_hotel_page(java.lang.String)">
+                <span>And the user enters a valid Check Out Date as "27/07/2025" in search hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchHotelSteps.the_user_clicks_on_the_button_in_search_hotel_page()">
+                <span>And the user clicks on the Search button in search hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SelectHotelSteps.the_user_selects_a_hotel_by_clicking_on_radio_button_in_select_hotel_page()">
+                <span>And the user selects a hotel by clicking on radio button in select hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SelectHotelSteps.the_user_clicks_on_continue_button_in_select_hotel_page()">
+                <span>And the user clicks on Continue button in select hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_enters_the_first_name_and_last_name(java.lang.String,java.lang.String)">
+                <span>And the user enters the First Name "Test" and Last Name "User"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_enters_the_billing_address(java.lang.String)">
+                <span>And the user enters the Billing Address "402, Adactin, Paramatta"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_enters_the_credit_card_no(java.lang.String)">
+                <span>And the user enters the Credit Card No "4521578542456215"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_enters_the_cvv_number(java.lang.String)">
+                <span>And the user enters the CVV Number "582"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_selects_the_values_for_the_dropdowns_in_book_hotel_page(io.cucumber.datatable.DataTable)">
+                <span>And the user selects the values for the dropdowns in book hotel page:</span>
+      <div><table class='markup-table table '><tr><td>Credit Card Type</td><td>Select Month</td><td>Select Year</td></tr><tr><td>American Express</td><td>October</td><td>2029</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_clicks_on_the_book_now_button_in_book_hotel_page()">
+                <span>And the user clicks on the Book Now button in book hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookingConfirmationSteps.the_user_clicks_on_the_search_hotel_button_in_booking_confirmation_page()">
+                <span>And the user clicks on the Search Hotel button in booking confirmation page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginSteps.the_user_should_navigate_to_the_search_hotel_page()">
+                <span>Then the user should navigate to the Search Hotel page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>User sees the fields with pre-filled data</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginSteps.the_user_is_on_the_login_page()">
+                <span>Given the user is on the login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginSteps.the_user_enters_username_and_password(java.lang.String,java.lang.String)">
+                <span>When the user enters username "AdactinUser234" and password "RA5974"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginSteps.the_user_clicks_on_login_button()">
+                <span>And the user clicks on login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchHotelSteps.the_user_selects_the_values_for_the_dropdowns_in_search_hotel_page(io.cucumber.datatable.DataTable)">
+                <span>And the user selects the values for the dropdowns in search hotel page:</span>
+      <div><table class='markup-table table '><tr><td>Location</td><td>Hotels</td><td>Room Type</td><td>Number of Rooms</td><td>Adults Per Room</td><td>Children Per Room</td></tr><tr><td>Sydney</td><td>Hotel Creek</td><td>Standard</td><td>3 - Three</td><td>2 - Two</td><td>2 - Two</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchHotelSteps.the_user_enters_a_valid_check_in_date_as_in_search_hotel_page(java.lang.String)">
+                <span>And the user enters a valid Check In Date as "23/07/2025" in search hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchHotelSteps.the_user_enters_a_valid_check_out_date_as_in_search_hotel_page(java.lang.String)">
+                <span>And the user enters a valid Check Out Date as "27/07/2025" in search hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchHotelSteps.the_user_clicks_on_the_button_in_search_hotel_page()">
+                <span>And the user clicks on the Search button in search hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SelectHotelSteps.the_user_selects_a_hotel_by_clicking_on_radio_button_in_select_hotel_page()">
+                <span>And the user selects a hotel by clicking on radio button in select hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SelectHotelSteps.the_user_clicks_on_continue_button_in_select_hotel_page()">
+                <span>And the user clicks on Continue button in select hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_enters_the_first_name_and_last_name(java.lang.String,java.lang.String)">
+                <span>And the user enters the First Name "Test" and Last Name "User"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_enters_the_billing_address(java.lang.String)">
+                <span>And the user enters the Billing Address "402, Adactin, Paramatta"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_enters_the_credit_card_no(java.lang.String)">
+                <span>And the user enters the Credit Card No "4521578542456215"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_enters_the_cvv_number(java.lang.String)">
+                <span>And the user enters the CVV Number "582"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_selects_the_values_for_the_dropdowns_in_book_hotel_page(io.cucumber.datatable.DataTable)">
+                <span>And the user selects the values for the dropdowns in book hotel page:</span>
+      <div><table class='markup-table table '><tr><td>Credit Card Type</td><td>Select Month</td><td>Select Year</td></tr><tr><td>American Express</td><td>October</td><td>2029</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_clicks_on_the_book_now_button_in_book_hotel_page()">
+                <span>And the user clicks on the Book Now button in book hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookingConfirmationSteps.the_user_should_see_hotel_name_in_the_booking_confirmation_page_is_same_as_the_hotel_selected_in_the_search_hotel_page()">
+                <span>Then the user should see hotel name in the Booking Confirmation page is same as the hotel selected in the Search Hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookingConfirmationSteps.the_user_should_see_location_in_the_booking_confirmation_page_is_same_as_the_location_selected_in_the_search_hotel_page()">
+                <span>And the user should see location in the Booking Confirmation page is same as the location selected in the Search Hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookingConfirmationSteps.the_user_should_see_room_type_in_the_booking_confirmation_page_is_same_as_the_rome_type_selected_in_the_search_hotel_page()">
+                <span>And the user should see room type in the Booking Confirmation page is same as the rome type selected in the Search Hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookingConfirmationSteps.the_user_should_see_arrival_date_in_the_booking_confirmation_page_is_same_as_the_check_in_date_entered_in_the_search_hotel_page()">
+                <span>And the user should see arrival date in the Booking Confirmation page is same as the check In date entered in the Search Hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookingConfirmationSteps.the_user_should_see_departure_date_in_the_booking_confirmation_page_is_same_as_the_check_out_date_entered_in_the_search_hotel_page()">
+                <span>And the user should see departure date in the Booking Confirmation page is same as the check out date entered in the Search Hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookingConfirmationSteps.the_user_should_see_total_rooms_in_the_booking_confirmation_page_is_same_as_the_number_of_rooms_selected_in_the_search_hotel_page()">
+                <span>And the user should see total rooms in the Booking Confirmation page is same as the number of rooms selected in the Search Hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookingConfirmationSteps.the_user_should_see_adults_per_room_in_the_booking_confirmation_page_is_same_as_the_adults_per_room_selected_in_the_select_hotel_page()">
+                <span>And the user should see adults per room in the Booking Confirmation page is same as the adults per room selected in the Select Hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookingConfirmationSteps.the_user_should_see_children_per_room_in_the_booking_confirmation_page_is_same_as_the_children_per_room_selected_in_the_select_hotel_page()">
+                <span>And the user should see children per room in the Booking Confirmation page is same as the children per room selected in the Select Hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.BookingConfirmationSteps.the_user_should_see_price_per_night_in_the_booking_confirmation_page_is_same_as_the_price_per_night_in_the_book_hotel_page()">
+                <span>And the user should see price per night in the Booking Confirmation page is same as the price per night in the Book Hotel page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.Error: Unresolved compilation problem: 
+	pricePerNightBookHotelPage cannot be resolved or is not a field
+
+	at stepDefinitions.BookingConfirmationSteps.the_user_should_see_price_per_night_in_the_booking_confirmation_page_is_same_as_the_price_per_night_in_the_book_hotel_page(BookingConfirmationSteps.java:95)
+	at ✽.the user should see price per night in the Booking Confirmation page is same as the price per night in the Book Hotel page(file:///C:/Users/srava/git/repository2/Adactin_CucumberFramework/src/test/java/features/BookingConfirmation.feature:57)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>stepDefinitions.Hooks.AddScreenshot(io.cucumber.java.Scenario)</span>
+      <div>image
+          <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/embedded1.png' src="./screenshots/embedded1.png">
+  
+    
+
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.BookingConfirmationSteps.the_user_should_see_total_price_in_the_booking_confirmation_page_is_same_as_the_total_price_in_the_book_hotel_page()">
+                <span>And the user should see total price in the Booking Confirmation page is same as the total price in the Book Hotel page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.BookingConfirmationSteps.the_user_should_see_the_gst_in_the_booking_confirmation_page_is_same_as_the_gst_in_the_book_hotel_page()">
+                <span>And the user should see the gst in the Booking Confirmation page is same as the gst in the Book Hotel page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.BookingConfirmationSteps.the_user_should_see_the_final_billed_price_in_the_booking_confirmation_page_is_same_as_the_final_billed_price_in_the_book_hotel_page()">
+                <span>And the user should see the final billed price in the Booking Confirmation page is same as the final billed price in the Book Hotel page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Book A Hotel Page functionality</p>
+            <p class="text-sm">
+              <span>4:59:01 pm</span> / <span>00:00:11:914</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Book A Hotel Page functionality</h5>
+<span class='badge badge-success'>01.13.2025 4:59:01 pm</span>
+<span class='badge badge-danger'>01.13.2025 4:59:13 pm</span>
+<span class='badge badge-default'>00:00:11:914</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="5"><span class="badge log pass-bg mr-2">Pass</span>User sees the fields with pre-filled data</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginSteps.the_user_is_on_the_login_page()">
+                <span>Given the user is on the login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginSteps.the_user_enters_username_and_password(java.lang.String,java.lang.String)">
+                <span>When the user enters username "AdactinUser234" and password "RA5974"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginSteps.the_user_clicks_on_login_button()">
+                <span>And the user clicks on login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchHotelSteps.the_user_selects_the_values_for_the_dropdowns_in_search_hotel_page(io.cucumber.datatable.DataTable)">
+                <span>And the user selects the values for the dropdowns in search hotel page:</span>
+      <div><table class='markup-table table '><tr><td>Location</td><td>Hotels</td><td>Room Type</td><td>Number of Rooms</td><td>Adults Per Room</td><td>Children Per Room</td></tr><tr><td>Sydney</td><td>Hotel Creek</td><td>Standard</td><td>3 - Three</td><td>2 - Two</td><td>2 - Two</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchHotelSteps.the_user_enters_a_valid_check_in_date_as_in_search_hotel_page(java.lang.String)">
+                <span>And the user enters a valid Check In Date as "23/07/2025" in search hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchHotelSteps.the_user_enters_a_valid_check_out_date_as_in_search_hotel_page(java.lang.String)">
+                <span>And the user enters a valid Check Out Date as "27/07/2025" in search hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchHotelSteps.the_user_clicks_on_the_button_in_search_hotel_page()">
+                <span>And the user clicks on the Search button in search hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SelectHotelSteps.the_user_selects_a_hotel_by_clicking_on_radio_button_in_select_hotel_page()">
+                <span>And the user selects a hotel by clicking on radio button in select hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_sees_the_select_hotel_name_in_the_select_hotel_page()">
+                <span>And the user sees the select hotel name in the select hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_sees_the_select_location_in_the_select_hotel_page()">
+                <span>And the user sees the select location in the select hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_sees_the_select_room_type_in_the_select_hotel_page()">
+                <span>And the user sees the select room type in the select hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_sees_the_number_of_rooms_in_the_select_hotel_page()">
+                <span>And the user sees the number of rooms in the select hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_sees_the_total_days_in_the_select_hotel_page()">
+                <span>And the user sees the total days in the select hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_sees_the_price_per_night_in_the_select_hotel_page()">
+                <span>And the user sees the price per night in the select hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_sees_the_total_price_in_the_select_hotel_page()">
+                <span>And the user sees the total price in the select hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SelectHotelSteps.the_user_clicks_on_continue_button_in_select_hotel_page()">
+                <span>And the user clicks on Continue button in select hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_should_see_hotel_name_in_the_book_hotel_page_is_same_as_the_hotel_selected_in_the_select_hotel_page()">
+                <span>Then the user should see hotel name in the Book hotel page is same as the hotel selected in the select Hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_should_see_location_in_the_book_hotel_page_is_same_as_the_location_selected_in_the_select_hotel_page()">
+                <span>And the user should see location in the Book hotel page is same as the location selected in the select Hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_should_see_room_type_in_the_book_hotel_page_is_same_as_the_rome_type_selected_in_the_select_hotel_page()">
+                <span>And the user should see room type in the Book hotel page is same as the rome type selected in the select Hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_should_see_number_of_rooms_in_the_book_hotel_page_is_same_as_the_number_of_rooms_selected_in_the_select_hotel_page()">
+                <span>And the user should see number of rooms in the Book hotel page is same as the number of rooms selected in the select Hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_should_see_total_days_in_the_book_hotel_page_is_same_as_the_no_of_days_in_the_select_hotel_page()">
+                <span>And the user should see total days in the Book hotel page is same as the no of days in the Select Hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_should_see_price_per_night_in_the_book_hotel_page_is_same_as_the_price_per_night_in_the_select_hotel_page()">
+                <span>And the user should see price per night in the Book hotel page is same as the price per night in the Select Hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_should_see_total_price_in_the_book_hotel_page_is_same_as_the_total_price_in_the_select_hotel_page()">
+                <span>And the user should see total price in the Book hotel page is same as the total price in the Select Hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_should_see_the_gst_is_calculated_correctly_in_book_hotel_page()">
+                <span>And the user should see the GST is calculated correctly in Book Hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BookHotelSteps.the_user_should_see_the_final_billed_price_is_calculated_correctly_in_book_hotel_page()">
+                <span>And the user should see the Final Billed Price is calculated correctly in Book Hotel page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.Error</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.Error</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:59:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='138'>And the user should see price per night in the Booking Confirmation page is same as the price per night in the Book Hotel page</a>
+<div class="">
+<span class="badge badge-default">Book Confirmation Page functionality.User sees the fields with pre-filled data.And the user should see price per night in the Booking Confirmation page is same as the price per night in the Book Hotel page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Testing</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Testing</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:59:01 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>User sees the fields with pre-filled data</a>
+<div class="">
+<span class="badge badge-default">Book Confirmation Page functionality.User sees the fields with pre-filled data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:59:01 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='5'>User sees the fields with pre-filled data</a>
+<div class="">
+<span class="badge badge-default">Book A Hotel Page functionality.User sees the fields with pre-filled data</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jan 13, 2025 04:59:00 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jan 13, 2025 04:59:20 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='50%'>
+<b>1</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='50%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='66%'><b>2</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='33%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='94%'><b>66</b> steps passed</small></div>
+<div>
+<small data-tooltip='1%'><b>1</b> steps failed,
+<b>3</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Book Confirmation Page functionality":18.555,"Book A Hotel Page functionality":11.914
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@Testing</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 2,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 66,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 3,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

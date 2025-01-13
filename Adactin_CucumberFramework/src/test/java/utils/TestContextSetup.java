@@ -22,14 +22,22 @@ public class TestContextSetup {
 	public String selectedAdultsPerRoom;
 	public String selectedChildrenPerRoom;
 	
-	public String pricePerNightSelectPage;
-	public String NoOfDaysSelectPage;
+	public String hotelNameSelectPage;
+	public String locationSelectPage;
+	public String roomTypeSelectPage;
+	public String numberOfRoomsSelectPage;
+	public String totalDaysSelectPage;
+	public String priceperNightSelectPage;
 	public String totalPriceSelectPage;
 	
-	public String pricePerNightBookHotelPage;
-	public String totalPriceBookHotelPage;
-	public String gstBookHotelPage;
-	public String finalBilledPriceBookHotelPage;
+	public String hotelNameBookPage;
+	public String locationBookPage;
+	public String roomTypeBookPage;
+	public String totalRoomsBookPage;
+	public String pricePerNightBookPage;
+	public String totalPriceBookPage;
+	public String gstBookPage;
+	public String finalPriceBookPage;
 	
 	public TestContextSetup() throws IOException
 	{

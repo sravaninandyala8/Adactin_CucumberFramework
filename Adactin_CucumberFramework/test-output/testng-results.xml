@@ -1,47 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="4" failed="5" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-13T09:24:08 AEDT" name="Default suite" finished-at="2025-01-13T09:24:51 AEDT" duration-ms="42933">
+  <suite started-at="2025-01-13T19:42:30 AEDT" name="Default suite" finished-at="2025-01-13T19:42:57 AEDT" duration-ms="27242">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.FailedTestRunner@740fb309]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-01-13T09:24:08 AEDT" name="Default test" finished-at="2025-01-13T09:24:51 AEDT" duration-ms="42933">
+    <test started-at="2025-01-13T19:42:30 AEDT" name="Default test" finished-at="2025-01-13T19:42:57 AEDT" duration-ms="27242">
       <class name="cucumberOptions.FailedTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumberOptions.FailedTestRunner@740fb309]" started-at="2025-01-13T09:24:08 AEDT" name="setUpClass" finished-at="2025-01-13T09:24:09 AEDT" duration-ms="1626" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumberOptions.FailedTestRunner@740fb309]" started-at="2025-01-13T19:42:30 AEDT" name="setUpClass" finished-at="2025-01-13T19:42:31 AEDT" duration-ms="1175" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@46f902e0]]>
+                <![CDATA[org.testng.TestRunner@3003827c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.FailedTestRunner@740fb309]" started-at="2025-01-13T09:24:09 AEDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-13T09:24:26 AEDT" duration-ms="16275" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.FailedTestRunner@740fb309]" started-at="2025-01-13T19:42:31 AEDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-13T19:42:53 AEDT" duration-ms="22248" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User clicks on Number of Rooms dropdown"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search Hotel Page functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.FailedTestRunner@740fb309]" started-at="2025-01-13T09:24:09 AEDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-13T09:24:42 AEDT" duration-ms="32513" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User sees all the fields"]]>
+                <![CDATA["User clicks on "My Itinerary" button"]]>
               </value>
             </param>
             <param index="1">
@@ -53,202 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.FailedTestRunner@740fb309]" started-at="2025-01-13T09:24:09 AEDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-13T09:24:26 AEDT" duration-ms="16432" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User sees the Check In Date"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search Hotel Page functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Check In Date is not correct expected [13/01/2025] but found [12/01/2025]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Check In Date is not correct expected [13/01/2025] but found [12/01/2025]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at stepDefinitions.SearchHotelSteps.the_user_should_see_the_default_value_in_the_check_in_date_field_as_todays_date_in_search_hotel_page(SearchHotelSteps.java:295)
-at ✽.the user should see the default value in the Check In Date field as todays date in search hotel page(file:///C:/Users/srava/git/repository2/Adactin_CucumberFramework/src/test/java/features/SearchHotel.feature:48)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.FailedTestRunner@740fb309]" started-at="2025-01-13T09:24:09 AEDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-13T09:24:34 AEDT" duration-ms="24176" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User sees the fields with pre-filled data"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Book A Hotel Page functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [null] but found [4]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [null] but found [4]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at stepDefinitions.BookHotelSteps.the_user_should_see_total_days_in_the_book_hotel_page_is_same_as_the_no_of_days_in_the_select_hotel_page(BookHotelSteps.java:227)
-at ✽.the user should see total days in the Book hotel page is same as the no of days in the Select Hotel page(file:///C:/Users/srava/git/repository2/Adactin_CucumberFramework/src/test/java/features/BookHotel.feature:45)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.FailedTestRunner@740fb309]" started-at="2025-01-13T09:24:09 AEDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-13T09:24:27 AEDT" duration-ms="17892" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User sees the Check In Date"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search Hotel Page functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Check Out Date is not correct expected [14/01/2025] but found [13/01/2025]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Check Out Date is not correct expected [14/01/2025] but found [13/01/2025]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at stepDefinitions.SearchHotelSteps.the_user_should_see_the_default_value_in_the_check_out_date_field_as_tomorrows_date_in_search_hotel_page(SearchHotelSteps.java:303)
-at ✽.the user should see the default value in the Check Out Date field as tomorrows date in search hotel page(file:///C:/Users/srava/git/repository2/Adactin_CucumberFramework/src/test/java/features/SearchHotel.feature:51)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.FailedTestRunner@740fb309]" started-at="2025-01-13T09:24:09 AEDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-13T09:24:42 AEDT" duration-ms="32376" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User sees the fields with pre-filled data"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Book Confirmation Page functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [null] but found [AUD $ 125]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [null] but found [AUD $ 125]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at stepDefinitions.BookingConfirmationSteps.the_user_should_see_price_per_night_in_the_booking_confirmation_page_is_same_as_the_price_per_night_in_the_book_hotel_page(BookingConfirmationSteps.java:95)
-at ✽.the user should see price per night in the Booking Confirmation page is same as the price per night in the Book Hotel page(file:///C:/Users/srava/git/repository2/Adactin_CucumberFramework/src/test/java/features/BookingConfirmation.feature:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.FailedTestRunner@740fb309]" started-at="2025-01-13T09:24:09 AEDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-13T09:24:26 AEDT" duration-ms="16703" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User clicks on "Booked Itinerary" link"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search Hotel Page functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.FailedTestRunner@740fb309]" started-at="2025-01-13T09:24:09 AEDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-13T09:24:31 AEDT" duration-ms="22054" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User sees all the column names"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Select Hotel Page functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.FailedTestRunner@740fb309]" started-at="2025-01-13T09:24:09 AEDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-13T09:24:29 AEDT" duration-ms="20159" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Reset button resets all fields to their default values"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search Hotel Page functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [13/01/2025] but found [12/01/2025]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [13/01/2025] but found [12/01/2025]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at stepDefinitions.SearchHotelSteps.all_the_fields_should_be_reset_to_their_default_values_in_search_hotel_page(SearchHotelSteps.java:375)
-at ✽.all the fields should be reset to their default values in search hotel page(file:///C:/Users/srava/git/repository2/Adactin_CucumberFramework/src/test/java/features/SearchHotel.feature:69)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumberOptions.FailedTestRunner@740fb309]" started-at="2025-01-13T09:24:42 AEDT" name="tearDownClass" finished-at="2025-01-13T09:24:51 AEDT" duration-ms="8694" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumberOptions.FailedTestRunner@740fb309]" started-at="2025-01-13T19:42:53 AEDT" name="tearDownClass" finished-at="2025-01-13T19:42:57 AEDT" duration-ms="3754" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
